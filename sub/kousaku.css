@@ -12,9 +12,10 @@ img {
   max-width: 800px;
 }
 
-
-.oneset{
+.oneset {
   border: thick double #32a1ce;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   margin: 2em;
@@ -22,6 +23,8 @@ img {
 }
 
 .balloon5 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   overflow: hidden;
   margin: 0 auto;
@@ -33,7 +36,7 @@ img {
   width: 80px;
 }
 
-.balloon5 .faceicon img{
+.balloon5 .faceicon img {
   width: 100%;
   height: auto;
   border: solid 3px #d7ebfe;
@@ -47,7 +50,7 @@ img {
 .says {
   color: black;
   display: inline-block;
-  position: relative; 
+  position: relative;
   margin: 5px 0 0 105px;
   padding: 17px 13px;
   border-radius: 12px;
@@ -58,7 +61,7 @@ img {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 18px; 
+  top: 18px;
   left: -24px;
   border: 12px solid transparent;
   border-right: 12px solid #d7ebfe;

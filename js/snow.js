@@ -4,23 +4,23 @@ particlesJS("particles-js", {
       value: 500, //増減
       density: {
         enable: true,
-        value_area: 800,
-      },
+        value_area: 800
+      }
     },
     color: {
-      value: "#ffffff",
+      value: "#ffffff"
     },
     shape: {
       type: "image",
       stroke: {
         width: 3,
-        color: "#fff",
+        color: "#fff"
       },
       image: {
         src: "../img/snow.png",
         width: 120,
-        height: 120,
-      },
+        height: 120
+      }
     },
     opacity: {
       value: 0.7,
@@ -29,8 +29,8 @@ particlesJS("particles-js", {
         enable: false,
         speed: 1,
         opacity_min: 0.1,
-        sync: false,
-      },
+        sync: false
+      }
     },
     size: {
       value: 5,
@@ -39,11 +39,11 @@ particlesJS("particles-js", {
         enable: false,
         speed: 20,
         size_min: 0.1,
-        sync: false,
-      },
+        sync: false
+      }
     },
     line_linked: {
-      enable: false,
+      enable: false
     },
     move: {
       enable: true,
@@ -56,21 +56,21 @@ particlesJS("particles-js", {
       attract: {
         enable: true,
         rotateX: 300,
-        rotateY: 1200,
-      },
-    },
+        rotateY: 1200
+      }
+    }
   },
   interactivity: {
     detect_on: "canvas",
     events: {
       onhover: {
-        enable: false,
+        enable: false
       },
       onclick: {
-        enable: false,
+        enable: false
       },
-      resize: true,
-    },
+      resize: true
+    }
   },
-  retina_detect: true,
+  retina_detect: true
 });

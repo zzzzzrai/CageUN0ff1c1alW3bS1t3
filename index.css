@@ -8,6 +8,8 @@ body {
 }
 
 ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -18,8 +20,9 @@ li {
 
 a.hide {
   color: white;
-  text-decoration: underline rgba(88, 88, 88,0.5) 0.2px;
-∏}
+  -webkit-text-decoration: underline rgba(88, 88, 88, 0.5) 0.2px;
+  text-decoration: underline rgba(88, 88, 88, 0.5) 0.2px;
+}
 
 .medate {
   background-color: gold;
@@ -30,8 +33,16 @@ a.hide {
 
 .gaming {
   /* 横長で虹色を作る */
-  background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+  background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0%
+    center/200%;
+  -webkit-animation: gaming 2s linear infinite;
   animation: gaming 2s linear infinite;
+}
+@-webkit-keyframes gaming {
+  /* backgroundを移動させる */
+  100% {
+    background-position-x: 200%;
+  }
 }
 @keyframes gaming {
   /* backgroundを移動させる */
@@ -41,7 +52,38 @@ a.hide {
 }
 
 .gamingstr {
+  -webkit-animation: rainbow 3s infinite;
   animation: rainbow 3s infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    color: #ff0053;
+  }
+  12% {
+    color: #ff5353;
+  }
+  24% {
+    color: #ffcf53;
+  }
+  36% {
+    color: #e8ff53;
+  }
+  48% {
+    color: #53ff5d;
+  }
+  60% {
+    color: #53ffbc;
+  }
+  72% {
+    color: #5393ff;
+  }
+  84% {
+    color: #ca53ff;
+  }
+  100% {
+    color: #ff53bd;
+  }
 }
 
 @keyframes rainbow {
