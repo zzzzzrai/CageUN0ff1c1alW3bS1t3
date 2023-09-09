@@ -1,0 +1,389 @@
+body,
+footer {
+  background-color: black;
+  background-image: url(../img/CAGEToumei.png);
+  font-family: "DotGothic16", sans-serif;
+}
+
+footer p,
+footer a {
+  color: #858585;
+  text-align: right;
+  font-size: xx-small;
+}
+footer a {
+  text-decoration: underline #6e6e6e 1px;
+}
+
+div#kiribandiv {
+  display: inline;
+  padding: 0px 6px;
+}
+
+p.kiriban {
+  display: inline;
+  border: 2px solid green;
+  padding: 0px 6px;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+h2 {
+  color: aqua;
+  text-align: center;
+}
+
+.marquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: green;
+}
+
+.marquee p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 2s linear infinite;
+  -webkit-animation: scroll-left 2s linear infinite;
+  animation: scroll-left 20s linear infinite;
+}
+p {
+  color: white;
+}
+
+table p {
+  color: green;
+}
+
+.neviIsGod img {
+  width: 10%;
+  height: 10%;
+  max-width: 50px;
+  max-height: 50px;
+  display: inline;
+}
+
+table {
+  color: white;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+tr {
+  vertical-align: TOP;
+}
+
+td {
+  text-align: center;
+  width: 33%;
+}
+
+table img {
+  width: 70px;
+  height: 70px;
+}
+
+.zikan {
+  margin: auto;
+  display: block;
+  padding: 2em;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+#kitui {
+  text-align: center;
+}
+
+#kitui h2 {
+  display: inline-block;
+  background: linear-gradient(45deg, red 15%, orange 30%, yellow 40%, green 55%, aqua 78%, blue 88%, PURPLE 100%);
+  background: -webkit-linear-gradient(45deg, red 15%, orange 30%, yellow 40%, green 55%, aqua 78%, blue 88%, PURPLE 100%);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientEffect 3.5s infinite alternate;
+}
+
+@keyframes gradientEffect {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+.yakamasii {
+  position: relative;
+  animation: GoRight 0.2s linear infinite;
+}
+.yakamasii2 {
+  position: relative;
+  animation: GoLeft 0.2s linear infinite;
+}
+
+.yakamasiitop {
+  position: relative;
+  animation: Gotop 0.2s linear infinite;
+}
+
+.yakamasiibottom {
+  position: relative;
+  animation: Gobottom 0.2s linear infinite;
+}
+
+@keyframes GoRight {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -1%;
+  }
+}
+
+@keyframes GoLeft {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -1%;
+  }
+}
+
+@keyframes Gotop {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -3px;
+  }
+}
+
+@keyframes Gobottom {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -3px;
+  }
+}
+
+/* 正気ではない -------------------------------------------------*/
+#particles-js,
+#particles-js2,
+#particles-js3 {
+  position: fixed; /*描画固定*/
+  z-index: -2; /*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper {
+  position: relative; /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1; /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width: 100%;
+  height: 100%;
+}
+
+#wings {
+  position: absolute;
+  z-index: -1; /*描画を一番下に*/
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wings li {
+  position: absolute;
+  list-style: none;
+  top: -20px;
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+#wings li.black {
+  background-image: url(../img/wingBlack.png);
+  background-repeat: no-repeat;
+}
+#wings li.white {
+  background-image: url(../img/wingWhite.png);
+  background-repeat: no-repeat;
+}
+
+@keyframes fall {
+  to {
+    top: 120%;
+  }
+}
+
+@keyframes sway1 {
+  from {
+    transform: translateX(0px) rotate(0deg);
+  }
+  to {
+    transform: translateX(100px) rotate(-85deg);
+  }
+}
+
+@keyframes sway2 {
+  from {
+    transform: translateX(100px) rotate(-85deg);
+  }
+  to {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+#wings li:nth-child(1) {
+  left: 0%;
+  top: -60px;
+  animation: fall 14s linear infinite, sway1 2s ease-in-out infinite alternate;
+  animation-delay: 2s;
+}
+
+#wings li:nth-child(2) {
+  left: 10%;
+  top: -60px;
+  animation: fall 14s linear infinite, sway2 3s ease-in-out infinite alternate;
+  animation-delay: 4s;
+}
+
+#wings li:nth-child(3) {
+  left: 80%;
+  top: -70px;
+  animation: fall 14s linear infinite, sway1 2s ease-in-out infinite alternate;
+  animation-delay: 6s;
+}
+
+#wings li:nth-child(4) {
+  left: 60%;
+  top: -70px;
+  animation: fall 14s linear infinite, sway2 1.9s ease-in-out infinite alternate;
+  animation-delay: 8s;
+}
+
+#wings li:nth-child(5) {
+  left: 20%;
+  top: -80px;
+  animation: fall 14s linear infinite, sway1 3.8s ease-in-out infinite alternate;
+  animation-delay: 10s;
+}
+
+#wings li:nth-child(6) {
+  left: 10%;
+  top: -80px;
+  animation: fall 14s linear infinite, sway2 3.1s ease-in-out infinite alternate;
+  animation-delay: 12s;
+}
+#wings li:nth-child(7) {
+  left: 90%;
+  top: -90px;
+  animation: fall 14s linear infinite, sway1 3.4s ease-in-out infinite alternate;
+  animation-delay: 14s;
+}
+#wings li:nth-child(8) {
+  left: 70%;
+  top: -90px;
+  animation: fall 14s linear infinite, sway2 3s ease-in-out infinite alternate;
+  animation-delay: 16s;
+}
+#wings li:nth-child(9) {
+  left: 20%;
+  top: -100px;
+  animation: fall 14s linear infinite, sway1 4.1s ease-in-out infinite alternate;
+  animation-delay: 18s;
+}
+#wings li:nth-child(10) {
+  left: 5%;
+  top: -100px;
+  animation: fall 14s linear infinite, sway2 2.3s ease-in-out infinite alternate;
+  animation-delay: 20s;
+}
+#wings li:nth-child(11) {
+  left: 80%;
+  top: -110px;
+  animation: fall 14s linear infinite, sway1 3s ease-in-out infinite alternate;
+  animation-delay: 22s;
+}
+#wings li:nth-child(12) {
+  left: 60%;
+  top: -110px;
+  animation: fall 14s linear infinite, sway2 3.5s ease-in-out infinite alternate;
+  animation-delay: 24s;
+}
+
+#wings li:nth-child(13) {
+  left: 10%;
+  top: -110px;
+  animation: fall 8s linear infinite, sway1 3.5s ease-in-out infinite alternate;
+  animation-delay: 2s;
+}
+
+#wings li:nth-child(14) {
+  left: 60%;
+  top: -110px;
+  animation: fall 8s linear infinite, sway2 3.5s ease-in-out infinite alternate;
+  animation-delay: 4s;
+}
+
+#wings li:nth-child(15) {
+  left: 40%;
+  top: -110px;
+  animation: fall 8s linear infinite, sway1 3.5s ease-in-out infinite alternate;
+  animation-delay: 6s;
+}
+
+#wings li:nth-child(16) {
+  left: 80%;
+  top: -110px;
+  animation: fall 8s linear infinite, sway2 3.5s ease-in-out infinite alternate;
+  animation-delay: 8s;
+}

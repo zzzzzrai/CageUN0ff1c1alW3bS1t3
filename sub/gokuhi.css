@@ -1,0 +1,134 @@
+body {
+  font-family: "DotGothic16", sans-serif;
+  background-color: rgb(189, 189, 189);
+}
+
+#header {
+  background: rgb(0, 0, 116);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 116, 1) 0%,
+    rgba(137, 177, 220, 1) 100%
+  );
+  color: white;
+  font-weight: bolder;
+}
+
+#headerFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexItemMax {
+  display: flex;
+  flex: 1;
+}
+
+#pc {
+  background-color: floralwhite;
+  border: 5px ridge gray;
+}
+
+ul {
+  padding: 1em;
+  margin: 0px;
+}
+li {
+  list-style: none;
+}
+i::before {
+  font-family: "Font Awesome 5 Free";
+}
+
+#pcDownArea {
+  height: 160px;
+  background: gray;
+}
+
+#bou {
+  width: 30%;
+  height: 160px;
+  background: gray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#key {
+  width: 70%;
+  height: 80px;
+  background: gray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media all and (max-width: 480px) {
+  #bou,
+  #key {
+    display: none;
+  }
+  li {
+    font-size: xx-small;
+  }
+}
+
+.fusen {
+  width: 300px; /*幅はお好きに*/
+  position: relative;
+  z-index: 0;
+}
+.fusen ul {
+  list-style: none;
+}
+.fusen ul li {
+  font-size: 0.9em;
+  margin: 0.6em 0;
+  padding: 1em;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    #ffffcc 0%,
+    #f1f1c1 0.5%,
+    #f1f1c1 13%,
+    #ffffcc 16%
+  ); /*グラデーションで折り目っぽく*/
+}
+.fusen ul li::after {
+  /*BOXを微妙に斜めにして配置、シャドウで立体感を出す*/
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+  transform: rotate(1deg);
+  top: 6%;
+  right: 0.5%;
+  left: 2%;
+  bottom: 8%;
+}
+
+div.footer {
+  background-color: #eeeeee;
+}
+
+.btnEff {
+  max-width: 20px;
+  padding: 1px;
+  text-align: center;
+  color: black;
+  background-color: #eeeeee;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fdfbfb),
+    to(#ebedee)
+  );
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
+  border-bottom: 2px solid #cccccc;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>ファイルが破損しています</h1>
+  <p>ファイル "魔獣とは異なる生態系の不思議な生き物の記録.html" が移動、編集、または削除された可能性があります。管理者に連絡してください</p>
+  <div>
+    <img src="../img/noimage.png" />
+  </div>
+
+  <div class="switchdsp">
+    <label for="l-1">
+      <span class="clicktxt">修復を試みる</span>
+    </label>
+    <input type="checkbox" id="l-1">
+    <div class="dsp">
+      <p>野外任務にて、数名のトリが奇妙な生き物と遭遇した。
+        彼らと正式なコンタクトをとるまでの道のりは困難だらけであった、
+        坂の上から大岩が突如転がってきたり、斧でクリスマスツリーを切り倒しその丸太に乗って山を下ったり、封鎖惑星ルビコン3への案内を頼まれたり、木の炉辺でロケットの修理を依頼されたり…。
+        フクロウがレポートをどう書けばよいのか頭を抱えるのも頷ける。幸いフラミンゴも同じものを見ていたため、協力して提出してくれるそうだ。
+
+        前述の困難については主に、カラスの果断さ、エナガの勇猛さ、そしてモズの狡猾とも評せる機転により乗り切ったという。
+        そうして奇妙な生き物をCageに招待したあとは、ツバメの真摯さとハクチョウの献身により、彼らの心を開くことに成功した。
+        観察の結果、彼らは魔獣とは異なる生き物であることが判明した。
+        生き物は多種多様で、空を飛ぶことができる種や、泳ぐことができる種もいるようだ。
+
+        例えば、この黄色いネズミのような生き物について述べるとしよう。
+        体の色は黄色を基調としている。
+        頭からは二本の耳が生えておりよく動く。尻尾の形はギザギザとしており、雷を表しているかのようだ。
+        基本は四足歩行だが、二足で立つこともできる。
+        特筆すべき点として、頬に電気袋を有しており、電気を発することができる。
+        鳴き声も特殊でこれまで聞いたことのない鳴き方をする。可愛らしい声で、ピッ、ピカチュ…おっと、カッコウに呼ばれたので、メモの続きは後で書くことにしよう</p>
+    </div>
+  </div>
+
+
+</body>
+
+<style>
+  body {
+    background-color: white;
+  }
+
+  div {
+    text-align: center;
+  }
+
+  img {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+  }
+
+  .clicktxt {
+    color: #ffffff;
+    background-color: #4169e1;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .switchdsp input {
+    display: none;
+  }
+
+  .switchdsp .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+  }
+
+  .switchdsp input:checked~.dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+  }
+</style>
+
+</html>
