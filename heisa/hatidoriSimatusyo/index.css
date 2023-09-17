@@ -137,3 +137,7 @@ body {
     padding: 0 8px;
   }
 }
+
+a {
+  padding: 2em;
+}
