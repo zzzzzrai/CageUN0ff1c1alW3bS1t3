@@ -166,4 +166,5 @@ body {
   display: block;
   padding: 0px;
   font-size: smaller;
+  z-index: 10000; /* カスの対応 */
 }
