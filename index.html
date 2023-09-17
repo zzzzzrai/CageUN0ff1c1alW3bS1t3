@@ -5,78 +5,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
-      rel="stylesheet"
-    />
-    <link href="index.css" rel="stylesheet" />
-    <title>特殊災禍対策本部 CAGEのホームページ</title>
+    <title>リダイレクト用</title>
   </head>
-
   <body>
-    <h1 class="medate gaming">
-      ⚠架空の二次創作サイトです⚠<br />公式とは一切関係ありません
-    </h1>
-
-    <h1 style="color: red">！必読！</h1>
-    <h1>Cageのホームページへようこそ♪</h1>
-    <h1>
-      <span style="padding: 0px; color: red; display: inline">必ず</span
-      >以下の<span style="padding: 0px; color: red; display: inline"
-        >利用規約</span
-      >を読んだ上でお入りください！
-    </h1>
-
-    <h1 style="color: red">【〜 利用規約 〜】</h1>
-    <ul>
-      <li>
-        当サイトは架空の二次創作サイトです。2000年代前半のインターネット個人サイトをモチーフに作られています。公式とは一切関係ありません。
-      </li>
-      <li>公式様にご迷惑がかかるような行為はおやめください</li>
-      <li>Wifiがある環境で見たほうがいいかもしれません</li>
-      <li>
-        動作確認ブラウザは、WindowsPC/Chrome、iPhone/Safari,Chromeです。変なときはブラウザ変えてみてください
-      </li>
-      <li>スマホをホットカイロに変える可能性があります</li>
-      <li>無断リンクは禁止です</li>
-      <li>バナー直リン禁止です</li>
-      <li>
-        他の方が読んでいて不快になるような言葉遣い、行為、荒らしは禁止です。
-      </li>
-      <li>
-        荒らしは無視でお願いします。<span
-          style="padding: 0px; color: red; font-weight: bold"
-          >荒らしに反応したら貴方も荒らしです</span
-        >
-      </li>
-      <li>ルールを守れない方は、事前に通知なくアク禁いたします。</li>
-      <li>
-        ルールを守れる方は<a href="./sub/main.html" class="hide">こちら</a
-        >の文字か末尾句点からお入りください<a
-          href="./sub/main.html"
-          class="hide"
-          >。</a
-        >
-      </li>
-      <li>
-        BBSはネットマナーを守って楽しくお使いください。書き込み大歓迎です!
-      </li>
-      <li>
-        もし問題を発見したときは管理人までご連絡ください。→<a
-          href="https://odaibako.net/u/ziraiokiba"
-          >連絡口</a
-        ><span style="font-size: x-small">　※ここでなくても大丈夫です</span>
-      </li>
-    </ul>
-    <h2>すべてをお読みになった方は、下からサイトへどうぞ</h2>
-    <h1><a href="./sub/ng.html">- ENTER -</a></h1>
-
-    <img src="./img/zikanne-.png" />
-
-    <h1 class="medate gamingstr">
-      ⚠架空の二次創作サイトです⚠<br />公式とは一切関係ありません
-    </h1>
+    <!-- かすみたいな実装のせいで怪しい挙動になってるかもしんないけど、ここ特に意味はないリダイレクト用のページです -->
   </body>
 </html>
+
+<script>
+  const IsEnd = true;
+  redirect();
+  function redirect() {
+    if (IsEnd) {
+      var arr = [
+        "./heisa/Hannah Steller/cacco-.html",
+        "./heisa/hatidoriSimatusyo/index.html",
+        "./heisa/nomal/index.html"
+      ];
+
+      var num = arr.length;
+      if (arr.length == 0) return false;
+
+      // 0 から (arr.length - 1) の乱数を取得
+      var num = Math.floor(Math.random() * arr.length);
+      location.href = arr[num];
+    } else {
+      location.href = "./index_live.html";
+    }
+  }
+</script>
