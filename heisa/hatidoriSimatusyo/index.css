@@ -138,6 +138,32 @@ body {
   }
 }
 
-a {
+#gameover-message {
   padding: 2em;
+  display: none;
+  font-weight: bold;
+  color: red;
+  width: fit-content;
+  margin-right: auto; /* 右から左に寄せる */
+  margin-left: auto; /* 左から右に寄せる */
+}
+
+#share {
+  display: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: fit-content;
+  margin-right: auto; /* 右から左に寄せる */
+  margin-left: auto; /* 左から右に寄せる */
+  z-index: 10000; /* カスの対応 */
+}
+
+#back {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: block;
+  padding: 0px;
+  font-size: smaller;
 }
